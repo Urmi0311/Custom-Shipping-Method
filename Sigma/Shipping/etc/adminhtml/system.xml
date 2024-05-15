@@ -25,8 +25,17 @@
                     <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
                     <can_be_empty>1</can_be_empty>
                 </field>
-                <field id="sort_order" translate="label" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
-                    <label>Sort Order</label>
+
+                <field id="weekdays" translate="label" type="multiselect" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Week day</label>
+                    <source_model>Magento\Config\Model\Config\Source\Locale\Weekdays</source_model>
+                </field>
+
+                <field id="starting_time" translate="label" type="time" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Starting Time (NZT)</label>
+                </field>
+                <field id="cutoff_time" translate="label" type="time" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Cut-Off Time (NZT)</label>
                 </field>
             </group>
         </section>
