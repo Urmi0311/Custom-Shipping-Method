@@ -59,7 +59,6 @@ class Customshipping extends AbstractCarrier implements CarrierInterface
         $this->rateResultFactory = $rateResultFactory;
         $this->rateMethodFactory = $rateMethodFactory;
         $this->logger = $logger;
-
     }
 
     /**
@@ -73,17 +72,6 @@ class Customshipping extends AbstractCarrier implements CarrierInterface
         if (!$this->getConfigFlag('active')) {
             return false;
         }
-
-        $selectedWeekdays = $this->getSelectedWeekdays();
-        $this->logger->info('Selected Weekdays: ' . implode(', ', $selectedWeekdays));
-
-        $starttime = $this->getStartTime();
-
-        $this->logger->info('start time:' . $starttime);
-
-        $cutofftime = $this->getcutoffTime();
-
-        $this->logger->info('cut time:' . $cutofftime);
 
         $orderTotal = $request->getBaseSubtotalInclTax();
         if ($orderTotal > 100) {
@@ -112,6 +100,9 @@ class Customshipping extends AbstractCarrier implements CarrierInterface
         return [$this->_code => $this->getConfigData('name')];
     }
 
+    /**
+     * Retrieve weekdays
+     */
     public function getSelectedWeekdays(): array
     {
         $weekdays = $this->getConfigData('weekdays');
@@ -121,14 +112,28 @@ class Customshipping extends AbstractCarrier implements CarrierInterface
         }
         return $weekdays;
     }
+    /**
+     * Retrieve starttime
+     */
     public function getStartTime(): string
     {
         $startTime = $this->getConfigData('starting_time');
         return $startTime;
     }
-    public function getcutoffTime(): string
+    /**
+     * Retrieve cutofftime
+     */
+    public function getCutoffTime(): string
     {
         $startTime = $this->getConfigData('cutoff_time');
         return $startTime;
+    }
+    /**
+     * Retrieve shippingfield value
+     */
+    public function getShippingField(): string
+    {
+        $shippingfield = $this->getConfigData('shipping_information');
+        return $shippingfield;
     }
 }

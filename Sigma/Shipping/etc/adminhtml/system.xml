@@ -37,6 +37,9 @@
                 <field id="cutoff_time" translate="label" type="time" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Cut-Off Time (NZT)</label>
                 </field>
+                <field id="shipping_information" translate="label" type="textarea" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Shipping Information</label>
+                </field>
             </group>
         </section>
     </system>

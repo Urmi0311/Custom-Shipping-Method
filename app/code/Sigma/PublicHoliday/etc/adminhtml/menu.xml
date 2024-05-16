@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Sigma_Grid::manager" title="Public Holiday" module="Sigma_Grid" sortOrder="10" resource="Sigma_Grid::manager" />
+        <add id="Sigma_Grid::add_row" title="Public Holiday" module="Sigma_Grid" sortOrder="20" parent="Sigma_Grid::manager" action="grid/grid" resource="Sigma_Grid::add_row"/>
+    </menu>
+</config>
