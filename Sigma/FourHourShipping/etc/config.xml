@@ -3,14 +3,13 @@
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
         <carriers>
-            <customshipping>
+            <fourhourshipping>
                 <active>0</active>
-                <title>Sigma Custom Shipping</title>
-                <name>Sigma Custom Shipping</name>
-                <sallowspecific>0</sallowspecific>
+                <title>4 Hours Delivery</title>
+                <name>4 Hours Delivery</name>
                 <sort_order>15</sort_order>
-                <model>Sigma\Shipping\Model\Carrier\Customshipping</model>
-            </customshipping>
+                <model>Sigma\FourHourShipping\Model\Carrier\FourHourShipping</model>
+            </fourhourshipping>
         </carriers>
     </default>
 </config>

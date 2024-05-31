@@ -6,6 +6,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'Sigma_Shipping',
+    'Sigma_SameDayShipping',
     __DIR__
 );
