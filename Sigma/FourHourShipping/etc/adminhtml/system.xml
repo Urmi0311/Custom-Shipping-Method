@@ -31,8 +31,6 @@
                 </field>
             </group>
         </section>
-    </system>
-    <system>
         <section id="priority_delivery" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Priority Delivery</label>
             <tab>sales</tab>
