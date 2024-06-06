@@ -3,13 +3,13 @@
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
         <carriers>
-            <nexteveningdelivery>
+            <tomorrownightdelivery>
                 <active>1</active>
-                <title>Next Evening Delivery</title>
-                <name>Next Evening Delivery</name>
+                <title>Tomorrow Night Delivery</title>
+                <name>Tomorrow Night Delivery</name>
                 <sort_order>15</sort_order>
-                <model>Sigma\NextEveningShipping\Model\Carrier\NextEveningShipping</model>
-            </nexteveningdelivery>
+                <model>Sigma\TomorrowNightShipping\Model\Carrier\TomorrowNightShipping</model>
+            </tomorrownightdelivery>
         </carriers>
     </default>
 </config>

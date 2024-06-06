@@ -1,6 +1,6 @@
 <?php
 
-namespace Sigma\NextEveningShipping\Model\Carrier;
+namespace Sigma\TomorrowNightShipping\Model\Carrier;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Quote\Model\Quote\Address\RateRequest;
@@ -13,13 +13,13 @@ use Magento\Shipping\Model\Rate\Result;
 use Magento\Shipping\Model\Rate\ResultFactory;
 use Psr\Log\LoggerInterface;
 
-class NextEveningShipping extends AbstractCarrier implements CarrierInterface
+class TomorrowNightShipping extends AbstractCarrier implements CarrierInterface
 {
 
     /**
      * @var string
      */
-    protected $_code = 'nexteveningdelivery';
+    protected $_code = 'tomorrownightdelivery';
 
     /**
      * @var bool
